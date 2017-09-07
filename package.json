@@ -24,10 +24,6 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "7.2.3",
-    "babel-jest": "20.0.3",
-    "babel-polyfill": "6.23.0",
-    "babel-preset-env": "1.6.0",
     "jest": "20.0.4",
     "snazzy": "6.0.0",
     "standard": "10.0.3"
@@ -39,21 +35,6 @@
     "lint": "standard | snazzy",
     "test:watch": "jest --watch",
     "test": "npm run lint && jest"
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
-  },
-  "standard": {
-    "parser": "babel-eslint"
   },
   "jest": {
     "testEnvironment": "node",
