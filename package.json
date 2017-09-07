@@ -1,0 +1,64 @@
+{
+  "name": "yandex-market-language",
+  "version": "0.0.1",
+  "description": "Our own Yandex Market Language (YML) generator, with blackjack and validation",
+  "homepage": "https://github.com/LotusTM/yandex-market-language",
+  "author": "Serj Lavrin (https://github.com/ArmorDarks)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LotusTM/yandex-market-language.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LotusTM/yandex-market-language/issues"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "yandex",
+    "market",
+    "language",
+    "yandex market",
+    "yandex market language",
+    "json",
+    "generator",
+    "validator"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-env": "1.6.0",
+    "jest": "20.0.4",
+    "snazzy": "6.0.0",
+    "standard": "10.0.3"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "standard | snazzy",
+    "test": "npm run lint && jest"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/.git/",
+      "/node_modules/"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js)?$"
+  }
+}
