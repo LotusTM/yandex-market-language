@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cleanse function should cleanse object 1`] = `
+Object {
+  "one": "test",
+}
+`;
+
+exports[`cleanse function should cleanse object 2`] = `
+Object {
+  "one": "test",
+}
+`;
+
+exports[`cleanse function should cleanse object 3`] = `
+Object {
+  "one": "test",
+}
+`;
+
+exports[`forNode function should error on non-object 1`] = `
+"[tcomb] Invalid value [
+  \\"nope\\"
+] supplied to Object"
+`;
+
+exports[`forNode function should error on non-object 2`] = `"[tcomb] Invalid value null supplied to Object"`;
+
+exports[`forNode function should invoke callback for each element in array for node 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <one>oneTest</one>
+  <two>2</two>
+</root>"
+`;
+
+exports[`forNodeEach function should error on non-array 1`] = `
+"[tcomb] Invalid value {
+  \\"nope\\": \\"nope\\"
+} supplied to Array<Any> (expected an array of Any)"
+`;
+
+exports[`forNodeEach function should error on non-array 2`] = `"[tcomb] Invalid value null supplied to Array<Any> (expected an array of Any)"`;
+
+exports[`forNodeEach function should invoke callback for each element in array for node 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <0>one</0>
+  <1>two</1>
+</root>"
+`;
