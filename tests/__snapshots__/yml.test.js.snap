@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`yml function \`create\` method should generate YML 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<yml_catalog date=\\"2017-09-07 00:00\\">
+  <shop>
+    <name>BestSeller</name>
+    <company>Tne Best inc.</company>
+    <url>http://best.seller.ru</url>
+    <currencies>
+      <currency id=\\"RUR\\" rate=\\"1\\"/>
+      <currency id=\\"USD\\" rate=\\"60\\"/>
+    </currencies>
+    <categories>
+      <category id=\\"1\\">Бытовая техника</category>
+      <category id=\\"10\\" parentId=\\"1\\">Мелкая техника для кухни</category>
+      <category id=\\"101\\" parentId=\\"10\\">Сэндвичницы и приборы для выпечки</category>
+      <category id=\\"102\\" parentId=\\"10\\">Мороженицы</category>
+    </categories>
+    <offers>
+      <offer id=\\"12346\\" available=\\"true\\" bid=\\"80\\" cbid=\\"90\\" fee=\\"325\\">
+        <url>http://best.seller.ru/product_page.asp?pid=12348</url>
+        <price>1490</price>
+        <oldprice>1620</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>101</categoryId>
+        <picture>http://best.seller.ru/img/large_12348.jpg</picture>
+        <store>false</store>
+        <pickup>true</pickup>
+        <delivery>true</delivery>
+        <delivery-options>[object Object]</delivery-options>
+        <name>Вафельница First FA-5300</name>
+        <vendor>First</vendor>
+        <vendorCode>A1234567B</vendorCode>
+        <description>&lt;![CDATA[
+            &lt;p&gt;Отличный подарок для любителей венских вафель.&lt;/p&gt;
+          ]]&gt;</description>
+        <sales_notes>Необходима предоплата.</sales_notes>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <country_of_origin>Россия</country_of_origin>
+        <barcode>0156789012</barcode>
+        <cpa>1</cpa>
+        <rec>123,456</rec>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>"
+`;
