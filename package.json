@@ -28,8 +28,8 @@
     "xmlbuilder": "9.0.4"
   },
   "devDependencies": {
-    "jest": "20.0.4",
-    "snazzy": "6.0.0",
+    "jest": "21.0.1",
+    "snazzy": "7.0.0",
     "standard": "10.0.3"
   },
   "engines": {
