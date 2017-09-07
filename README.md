@@ -2,6 +2,7 @@ Yandex Market Language (YML)
 ============================
 
 > Your own Yandex Market Language (YML) generator from JSON, with blackjack and validation
+
 > Твой собственный генератор Yandex Market Language (YML) из JSON, с блэкджэком и валидацией
 
 <a href='https://www.npmjs.com/package/yandex-market-language'>
