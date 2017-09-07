@@ -13,5 +13,5 @@ module.exports = {
    * @example
    *  Maxlength(12)(t.String)('Hey, this is a long string!')
    */
-  Maxlength: (max) => (type) => t.refinement(t.Number(max) && t.Type(type), (t) => t.length <= max, `Maxlength ${max}`),
+  Maxlength: (max) => (type) => t.refinement(t.Number(max) && t.Type(type), (t) => t.length <= max, `Maxlength ${max}`)
 }
