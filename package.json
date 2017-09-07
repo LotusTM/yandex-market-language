@@ -23,7 +23,9 @@
     "validator"
   ],
   "dependencies": {
-    "tcomb": "^3.2.23"
+    "moment": "2.18.1",
+    "tcomb": "3.2.23",
+    "xmlbuilder": "9.0.4"
   },
   "devDependencies": {
     "jest": "20.0.4",
