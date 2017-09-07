@@ -1,8 +1,8 @@
 Yandex Market Language (YML)
 ============================
 
-> Validates and generates YML for Yandex Market from JSON
-> Валидирует и генерирует YML для Яндекс Маркета из JSON
+> Your own Yandex Market Language (YML) generator from JSON, with blackjack and validation
+> Твой собственный генератор Yandex Market Language (YML) из JSON, с блэкджэком и валидацией
 
 <a href='https://www.npmjs.com/package/yandex-market-language'>
   <img src='https://img.shields.io/npm/v/yandex-market-language.svg' alt='NPM version' />
