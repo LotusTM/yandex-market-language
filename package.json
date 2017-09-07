@@ -37,6 +37,7 @@
   },
   "scripts": {
     "lint": "standard | snazzy",
+    "test:watch": "jest --watch",
     "test": "npm run lint && jest"
   },
   "babel": {
