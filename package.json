@@ -22,7 +22,9 @@
     "generator",
     "validator"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "tcomb": "^3.2.23"
+  },
   "devDependencies": {
     "jest": "20.0.4",
     "snazzy": "6.0.0",
