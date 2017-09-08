@@ -31,7 +31,9 @@ exports[`yml function \`create\` method should generate YML 1`] = `
         <store>false</store>
         <pickup>true</pickup>
         <delivery>true</delivery>
-        <delivery-options>[object Object]</delivery-options>
+        <delivery-options>
+          <option cost=\\"300\\" days=\\"0\\" order-before=\\"12\\"/>
+        </delivery-options>
         <name>Вафельница First FA-5300</name>
         <vendor>First</vendor>
         <vendorCode>A1234567B</vendorCode>
