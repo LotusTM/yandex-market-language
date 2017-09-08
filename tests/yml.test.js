@@ -71,7 +71,7 @@ describe('yml function', () => {
           rec: ['123', '456']
         }
       ]
-    }, { validate: false, date: '2017-09-07' }).create()).toMatchSnapshot()
+    }, { validate: false, date: '2017-09-07' }).create().end({ pretty: true })).toMatchSnapshot()
   })
 })
 
