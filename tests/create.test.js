@@ -71,6 +71,10 @@ describe('create function', () => {
             value: 12
           },
           barcode: ['0156789012'],
+          param: [
+            { name: 'Размер экрана', unit: 'дюйм', value: 27 },
+            { name: 'Материал', value: 'алюминий' }
+          ],
           cpa: '1',
           rec: ['123', '456']
         }
