@@ -51,6 +51,7 @@ exports[`create function should create YML 1`] = `
         <barcode>0156789012</barcode>
         <param name=\\"Размер экрана\\" unit=\\"дюйм\\">27</param>
         <param name=\\"Материал\\">алюминий</param>
+        <dimensions>20/30/40</dimensions>
         <cpa>1</cpa>
         <rec>123,456</rec>
       </offer>

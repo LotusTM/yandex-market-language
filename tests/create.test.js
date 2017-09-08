@@ -75,6 +75,7 @@ describe('create function', () => {
             { name: 'Размер экрана', unit: 'дюйм', value: 27 },
             { name: 'Материал', value: 'алюминий' }
           ],
+          dimensions: [20, 30, 40],
           cpa: '1',
           rec: ['123', '456']
         }
