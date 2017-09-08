@@ -30,6 +30,10 @@ exports[`create function should create YML 1`] = `
         <picture>http://best.seller.ru/img/large_12348.jpg</picture>
         <store>false</store>
         <pickup>true</pickup>
+        <outlets>
+          <outlet id=\\"1\\" instock=\\"50\\"/>
+          <outlet id=\\"2\\" instock=\\"20\\" booking=\\"true\\"/>
+        </outlets>
         <delivery>true</delivery>
         <delivery-options>
           <option cost=\\"300\\" days=\\"0\\" order-before=\\"12\\"/>

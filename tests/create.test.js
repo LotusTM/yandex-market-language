@@ -45,6 +45,10 @@ describe('create function', () => {
           picture: ['http://best.seller.ru/img/large_12348.jpg'],
           store: false,
           pickup: true,
+          outlets: [
+            { id: '1', instock: 50 },
+            { id: '2', instock: 20, booking: true }
+          ],
           delivery: true,
           'delivery-options': [
             {
