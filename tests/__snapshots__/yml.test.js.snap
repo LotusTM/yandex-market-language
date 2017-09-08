@@ -17,6 +17,9 @@ exports[`yml function \`create\` method should generate YML 1`] = `
       <category id=\\"101\\" parentId=\\"10\\">Сэндвичницы и приборы для выпечки</category>
       <category id=\\"102\\" parentId=\\"10\\">Мороженицы</category>
     </categories>
+    <delivery-options>
+      <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
+    </delivery-options>
     <offers>
       <offer id=\\"12346\\" available=\\"true\\" bid=\\"80\\" cbid=\\"90\\" fee=\\"325\\">
         <url>http://best.seller.ru/product_page.asp?pid=12348</url>

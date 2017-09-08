@@ -18,6 +18,13 @@ describe('yml function', () => {
         { id: '101', parentId: '10', name: 'Сэндвичницы и приборы для выпечки' },
         { id: '102', parentId: '10', name: 'Мороженицы' }
       ],
+      'delivery-options': [
+        {
+          cost: 300,
+          days: [1, 20],
+          'order-before': 12
+        }
+      ],
       offers: [
         {
           id: '12346',
