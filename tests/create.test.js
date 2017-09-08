@@ -2,14 +2,14 @@
 
 const builder = require('xmlbuilder')
 const {
-  yml,
+  create,
   createDeliveryOptions,
   createOfferPrice
-} = require('../lib/yml')
+} = require('../lib/create')
 
-describe('yml function', () => {
-  it('`create` method should generate YML', () => {
-    expect(yml({
+describe('create function', () => {
+  it('should create YML', () => {
+    expect(create({
       name: 'BestSeller',
       company: 'Tne Best inc.',
       url: 'http://best.seller.ru',
@@ -71,7 +71,7 @@ describe('yml function', () => {
           rec: ['123', '456']
         }
       ]
-    }, { validate: false, date: '2017-09-07' }).create().end({ pretty: true })).toMatchSnapshot()
+    }, { date: '2017-09-07' }).end({ pretty: true })).toMatchSnapshot()
   })
 })
 
