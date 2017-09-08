@@ -3,8 +3,8 @@
 const builder = require('xmlbuilder')
 const {
   yml,
-  buildDeliveryOptions,
-  buildOfferPrice
+  createDeliveryOptions,
+  createOfferPrice
 } = require('../lib/yml')
 
 describe('yml function', () => {
@@ -75,31 +75,31 @@ describe('yml function', () => {
   })
 })
 
-describe('buildDeliveryOptions function', () => {
+describe('createDeliveryOptions function', () => {
   it('should build proper nodes with days as empty string', () => {
-    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: '', 'order-before': 12 }])
+    const xml = createDeliveryOptions(builder.create('root'), [{ cost: 300, days: '', 'order-before': 12 }])
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 
   it('should build proper nodes days as with number', () => {
-    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: 1, 'order-before': 12 }])
+    const xml = createDeliveryOptions(builder.create('root'), [{ cost: 300, days: 1, 'order-before': 12 }])
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 
   it('should build proper nodes with days as tuple', () => {
-    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: [1, 20], 'order-before': 12 }])
+    const xml = createDeliveryOptions(builder.create('root'), [{ cost: 300, days: [1, 20], 'order-before': 12 }])
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 })
 
-describe('buildOfferPrice function', () => {
+describe('createOfferPrice function', () => {
   it('should build proper nodes from number', () => {
-    const xml = buildOfferPrice(builder.create('root'), 1490)
+    const xml = createOfferPrice(builder.create('root'), 1490)
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 
   it('should build proper nodes from object', () => {
-    const xml = buildOfferPrice(builder.create('root'), { from: true, value: 1490 })
+    const xml = createOfferPrice(builder.create('root'), { from: true, value: 1490 })
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 })

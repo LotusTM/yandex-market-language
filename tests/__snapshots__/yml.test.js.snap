@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`buildDeliveryOptions function should build proper nodes days as with number 1`] = `
+exports[`createDeliveryOptions function should build proper nodes days as with number 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
   <delivery-options>
@@ -9,7 +9,7 @@ exports[`buildDeliveryOptions function should build proper nodes days as with nu
 </root>"
 `;
 
-exports[`buildDeliveryOptions function should build proper nodes with days as empty string 1`] = `
+exports[`createDeliveryOptions function should build proper nodes with days as empty string 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
   <delivery-options>
@@ -18,7 +18,7 @@ exports[`buildDeliveryOptions function should build proper nodes with days as em
 </root>"
 `;
 
-exports[`buildDeliveryOptions function should build proper nodes with days as tuple 1`] = `
+exports[`createDeliveryOptions function should build proper nodes with days as tuple 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
   <delivery-options>
@@ -27,14 +27,14 @@ exports[`buildDeliveryOptions function should build proper nodes with days as tu
 </root>"
 `;
 
-exports[`buildOfferPrice function should build proper nodes from number 1`] = `
+exports[`createOfferPrice function should build proper nodes from number 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
   <price>1490</price>
 </root>"
 `;
 
-exports[`buildOfferPrice function should build proper nodes from object 1`] = `
+exports[`createOfferPrice function should build proper nodes from object 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
   <price from=\\"true\\">1490</price>
