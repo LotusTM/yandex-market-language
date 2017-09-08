@@ -1,7 +1,11 @@
 /* eslint-env jest */
 
 const builder = require('xmlbuilder')
-const { yml, buildOfferPrice } = require('../lib/yml')
+const {
+  yml,
+  buildDeliveryOptions,
+  buildOfferPrice
+} = require('../lib/yml')
 
 describe('yml function', () => {
   it('`create` method should generate YML', () => {
@@ -64,6 +68,23 @@ describe('yml function', () => {
         }
       ]
     }, { validate: false, date: '2017-09-07' }).create()).toMatchSnapshot()
+  })
+})
+
+describe('buildDeliveryOptions function', () => {
+  it('should build proper nodes with days as empty string', () => {
+    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: '', 'order-before': 12 }])
+    expect(xml.end({ pretty: true })).toMatchSnapshot()
+  })
+
+  it('should build proper nodes days as with number', () => {
+    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: 1, 'order-before': 12 }])
+    expect(xml.end({ pretty: true })).toMatchSnapshot()
+  })
+
+  it('should build proper nodes with days as tuple', () => {
+    const xml = buildDeliveryOptions(builder.create('root'), [{ cost: 300, days: [1, 20], 'order-before': 12 }])
+    expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 })
 

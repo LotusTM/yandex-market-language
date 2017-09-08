@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`buildDeliveryOptions function should build proper nodes days as with number 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"1\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
+exports[`buildDeliveryOptions function should build proper nodes with days as empty string 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
+exports[`buildDeliveryOptions function should build proper nodes with days as tuple 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
 exports[`buildOfferPrice function should build proper nodes from number 1`] = `
 "<?xml version=\\"1.0\\"?>
 <root>
