@@ -34,10 +34,6 @@ describe('yml function', () => {
           cbid: 90,
           fee: 325,
           url: 'http://best.seller.ru/product_page.asp?pid=12348',
-          // price: {
-          //   from: true,
-          //   value: 1490
-          // },
           price: 1490,
           oldprice: 1620,
           currencyId: 'RUR',
@@ -73,16 +69,12 @@ describe('yml function', () => {
 
 describe('buildOfferPrice function', () => {
   it('should build proper nodes from number', () => {
-    const xml = builder.create('root')
-
-    buildOfferPrice(xml, 1490)
+    const xml = buildOfferPrice(builder.create('root'), 1490)
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 
   it('should build proper nodes from object', () => {
-    const xml = builder.create('root')
-
-    buildOfferPrice(xml, { from: true, value: 1490 })
+    const xml = buildOfferPrice(builder.create('root'), { from: true, value: 1490 })
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 })
