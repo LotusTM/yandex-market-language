@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`buildOfferPrice function should build proper nodes from number 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <price>1490</price>
+</root>"
+`;
+
+exports[`buildOfferPrice function should build proper nodes from object 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <price from=\\"true\\">1490</price>
+</root>"
+`;
+
 exports[`yml function \`create\` method should generate YML 1`] = `
 "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
 <yml_catalog date=\\"2017-09-07 00:00\\">

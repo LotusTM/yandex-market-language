@@ -1,6 +1,7 @@
 /* eslint-env jest */
 
-const yml = require('../lib/yml')
+const builder = require('xmlbuilder')
+const { yml, buildOfferPrice } = require('../lib/yml')
 
 describe('yml function', () => {
   it('`create` method should generate YML', () => {
@@ -67,5 +68,21 @@ describe('yml function', () => {
         }
       ]
     }, { validate: false, date: '2017-09-07' }).create()).toMatchSnapshot()
+  })
+})
+
+describe('buildOfferPrice function', () => {
+  it('should build proper nodes from number', () => {
+    const xml = builder.create('root')
+
+    buildOfferPrice(xml, 1490)
+    expect(xml.end({ pretty: true })).toMatchSnapshot()
+  })
+
+  it('should build proper nodes from object', () => {
+    const xml = builder.create('root')
+
+    buildOfferPrice(xml, { from: true, value: 1490 })
+    expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 })
