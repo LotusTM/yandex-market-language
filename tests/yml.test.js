@@ -33,6 +33,10 @@ describe('yml function', () => {
           cbid: 90,
           fee: 325,
           url: 'http://best.seller.ru/product_page.asp?pid=12348',
+          // price: {
+          //   from: true,
+          //   value: 1490
+          // },
           price: 1490,
           oldprice: 1620,
           currencyId: 'RUR',
