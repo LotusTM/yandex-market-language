@@ -11,8 +11,8 @@ describe('forNode function', () => {
   it('should invoke callback for each element in array for node', () => {
     const xml = builder.create('root')
 
-    forNode(xml, { one: 'oneTest', two: 2 }, (parent, prop, value) => {
-      parent.node(prop, {}, value)
+    forNode(xml, { one: 'oneTest', two: 2 }, (parent, key, entry) => {
+      parent.node(key, {}, entry)
     })
 
     expect(xml.end({ pretty: true })).toMatchSnapshot()
@@ -28,8 +28,8 @@ describe('forNodeEach function', () => {
   it('should invoke callback for each element in array for node', () => {
     const xml = builder.create('root')
 
-    forNodeEach(xml, ['one', 'two'], (parent, value, index) => {
-      parent.node(index, {}, value)
+    forNodeEach(xml, ['one', 'two'], (parent, entry, index) => {
+      parent.node(index, {}, entry)
     })
 
     expect(xml.end({ pretty: true })).toMatchSnapshot()
