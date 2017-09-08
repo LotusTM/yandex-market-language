@@ -84,6 +84,7 @@ exports[`yml function \`create\` method should generate YML 1`] = `
         <sales_notes>Необходима предоплата.</sales_notes>
         <manufacturer_warranty>true</manufacturer_warranty>
         <country_of_origin>Россия</country_of_origin>
+        <age unit=\\"month\\">12</age>
         <barcode>0156789012</barcode>
         <cpa>1</cpa>
         <rec>123,456</rec>

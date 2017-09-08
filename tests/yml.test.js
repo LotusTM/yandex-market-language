@@ -62,6 +62,10 @@ describe('yml function', () => {
           sales_notes: 'Необходима предоплата.',
           manufacturer_warranty: true,
           country_of_origin: 'Россия',
+          age: {
+            unit: 'month',
+            value: 12
+          },
           barcode: ['0156789012'],
           cpa: '1',
           rec: ['123', '456']
