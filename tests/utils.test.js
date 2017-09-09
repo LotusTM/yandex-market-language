@@ -9,9 +9,7 @@ const {
 
 describe('forNode function', () => {
   it('should invoke callback for each element in array for node', () => {
-    const xml = builder.create('root')
-
-    forNode(xml, { one: 'oneTest', two: 2 }, (parent, key, entry) => {
+    const xml = forNode(builder.create('root'), { one: 'oneTest', two: 2 }, (parent, key, entry) => {
       parent.node(key, {}, entry)
     })
 
@@ -26,9 +24,7 @@ describe('forNode function', () => {
 
 describe('forNodeEach function', () => {
   it('should invoke callback for each element in array for node', () => {
-    const xml = builder.create('root')
-
-    forNodeEach(xml, ['one', 'two'], (parent, entry, index) => {
+    const xml = forNodeEach(builder.create('root'), ['one', 'two'], (parent, entry, index) => {
       parent.node(index, {}, entry)
     })
 
