@@ -60,9 +60,9 @@ describe('create function', () => {
           name: 'Вафельница First FA-5300',
           vendor: 'First',
           vendorCode: 'A1234567B',
-          description: `<![CDATA[
+          description: `
             <p>Отличный подарок для любителей венских вафель.</p>
-          ]]>`,
+          `,
           sales_notes: 'Необходима предоплата.',
           manufacturer_warranty: true,
           country_of_origin: 'Россия',

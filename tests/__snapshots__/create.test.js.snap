@@ -41,9 +41,11 @@ exports[`create function should create YML 1`] = `
         <name>Вафельница First FA-5300</name>
         <vendor>First</vendor>
         <vendorCode>A1234567B</vendorCode>
-        <description>&lt;![CDATA[
-            &lt;p&gt;Отличный подарок для любителей венских вафель.&lt;/p&gt;
-          ]]&gt;</description>
+        <description>
+          <![CDATA[
+            <p>Отличный подарок для любителей венских вафель.</p>
+          ]]>
+        </description>
         <sales_notes>Необходима предоплата.</sales_notes>
         <manufacturer_warranty>true</manufacturer_warranty>
         <country_of_origin>Россия</country_of_origin>
