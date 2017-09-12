@@ -252,3 +252,149 @@ Object {
 `;
 
 exports[`yml function should throw validation error on wrong input 1`] = `"[tcomb] Invalid value undefined supplied to YML/company: String"`;
+
+exports[`yml function should work correctly with max input 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<yml_catalog date=\\"2017-09-07 00:00\\">
+  <shop>
+    <name>BestSeller</name>
+    <company>Tne Best inc.</company>
+    <url>http://best.seller.ru</url>
+    <platform>Wordpress</platform>
+    <version>1</version>
+    <agency>How knows</agency>
+    <email>example@example.com</email>
+    <currencies>
+      <currency id=\\"RUR\\" rate=\\"1\\"/>
+      <currency id=\\"USD\\" rate=\\"CBRF\\"/>
+    </currencies>
+    <categories>
+      <category id=\\"1\\">Бытовая техника</category>
+      <category id=\\"10\\" parentId=\\"1\\">Мелкая техника для кухни</category>
+      <category id=\\"101\\" parentId=\\"10\\">Сэндвичницы и приборы для выпечки</category>
+      <category id=\\"102\\" parentId=\\"10\\">Мороженицы</category>
+    </categories>
+    <delivery-options>
+      <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
+    </delivery-options>
+    <cpa>0</cpa>
+    <adult>true</adult>
+    <offers>
+      <offer id=\\"1\\" available=\\"true\\" bid=\\"20\\" cbid=\\"50\\" fee=\\"10\\" group_id=\\"13\\">
+        <name>Вафельница First FA-5300</name>
+        <model>First FA-5300</model>
+        <vendor>First</vendor>
+        <vendorCode>A1234567B</vendorCode>
+        <url>http://best.seller.ru/product_page.asp?pid=12348</url>
+        <price from=\\"true\\">1500</price>
+        <oldprice>1200</oldprice>
+        <currencyId>RUB</currencyId>
+        <categoryId>101</categoryId>
+        <picture>http://best.seller.ru/img/large_12348.jpg</picture>
+        <store>true</store>
+        <pickup>true</pickup>
+        <delivery>true</delivery>
+        <outlets>
+          <outlet id=\\"205\\" instock=\\"20\\" booking=\\"true\\"/>
+        </outlets>
+        <delivery-options>
+          <option cost=\\"900\\" days=\\"1-20\\" order-before=\\"6\\"/>
+        </delivery-options>
+        <description>
+          <![CDATA[
+        <p>Отличный подарок для любителей венских вафель.</p>
+      ]]>
+        </description>
+        <sales_notes>Необходима предоплата.</sales_notes>
+        <min-quantity>1</min-quantity>
+        <step-quantity>1</step-quantity>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <country_of_origin>Австралия</country_of_origin>
+        <adult>true</adult>
+        <age unit=\\"year\\">12</age>
+        <barcode>0156789012</barcode>
+        <cpa>0</cpa>
+        <param name=\\"Размер экрана\\" unit=\\"дюйм\\">27</param>
+        <param name=\\"Материал\\">алюминий</param>
+        <expiry>2017-09-12T12:00</expiry>
+        <weight>50</weight>
+        <dimensions>10/20/30</dimensions>
+        <downloadable>true</downloadable>
+        <rec>123,456</rec>
+        <vat>1</vat>
+      </offer>
+      <offer type=\\"vendor.model\\" id=\\"1\\" available=\\"true\\" bid=\\"20\\" cbid=\\"50\\" fee=\\"10\\" group_id=\\"13\\">
+        <typePrefix>Вафельница</typePrefix>
+        <model>First FA-5300</model>
+        <vendor>First</vendor>
+        <vendorCode>A1234567B</vendorCode>
+        <url>http://best.seller.ru/product_page.asp?pid=12348</url>
+        <price from=\\"true\\">1500</price>
+        <oldprice>1200</oldprice>
+        <currencyId>RUB</currencyId>
+        <categoryId>101</categoryId>
+        <picture>http://best.seller.ru/img/large_12348.jpg</picture>
+        <store>true</store>
+        <pickup>true</pickup>
+        <delivery>true</delivery>
+        <outlets>
+          <outlet id=\\"205\\" instock=\\"20\\" booking=\\"true\\"/>
+        </outlets>
+        <delivery-options>
+          <option cost=\\"900\\" days=\\"1-20\\" order-before=\\"6\\"/>
+        </delivery-options>
+        <description>
+          <![CDATA[
+        <p>Отличный подарок для любителей венских вафель.</p>
+      ]]>
+        </description>
+        <sales_notes>Необходима предоплата.</sales_notes>
+        <min-quantity>1</min-quantity>
+        <step-quantity>1</step-quantity>
+        <manufacturer_warranty>true</manufacturer_warranty>
+        <country_of_origin>Австралия</country_of_origin>
+        <adult>true</adult>
+        <age unit=\\"year\\">12</age>
+        <barcode>0156789012</barcode>
+        <cpa>0</cpa>
+        <param name=\\"Размер экрана\\" unit=\\"дюйм\\">27</param>
+        <param name=\\"Материал\\">алюминий</param>
+        <expiry>2017-09-12T12:00</expiry>
+        <weight>50</weight>
+        <dimensions>10/20/30</dimensions>
+        <downloadable>true</downloadable>
+        <rec>123,456</rec>
+        <vat>1</vat>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>"
+`;
+
+exports[`yml function should work correctly with min input 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<yml_catalog date=\\"2017-09-07 00:00\\">
+  <shop>
+    <name>BestSeller</name>
+    <company>Tne Best inc.</company>
+    <url>http://best.seller.ru</url>
+    <currencies>
+      <currency id=\\"RUR\\" rate=\\"1\\"/>
+    </currencies>
+    <categories>
+      <category id=\\"1\\">Бытовая техника</category>
+    </categories>
+    <delivery-options>
+      <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
+    </delivery-options>
+    <offers>
+      <offer id=\\"12346\\">
+        <name>Вафельница First FA-5300</name>
+        <price>1490</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>101</categoryId>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>"
+`;
