@@ -72,7 +72,5 @@ const VALID_INPUT = {
 }
 
 module.exports = {
-  VALID_INPUT,
-  FREE_OFFER,
-  SIMPLIFIED_OFFER
+  VALID_INPUT
 }
