@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 1`] = `"[tcomb] Invalid value true supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 2`] = `"[tcomb] Invalid value \\"/url\\" supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 3`] = `"[tcomb] Invalid value \\"url/\\" supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 4`] = `"[tcomb] Invalid value \\"url\\" supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 5`] = `"[tcomb] Invalid value -1 supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 6`] = `"[tcomb] Invalid value 1 supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 7`] = `"[tcomb] Invalid value -1.555 supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 8`] = `"[tcomb] Invalid value 1.555 supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 9`] = `"[tcomb] Invalid value 0 supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 10`] = `"[tcomb] Invalid value null supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should error on everything except absolute url 11`] = `"[tcomb] Invalid value undefined supplied to Absolute url"`;
+
+exports[`Tcomb refinement Absoluteurl should pass absolute url 1`] = `"http://test.com"`;
+
+exports[`Tcomb refinement Absoluteurl should pass absolute url 2`] = `"https://test.com"`;
+
+exports[`Tcomb refinement Absoluteurl should pass absolute url 3`] = `"//test.com"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 1`] = `"[tcomb] Invalid value true supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 2`] = `"[tcomb] Invalid value \\"http://test.com/imagelikepath.svg/\\" supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 3`] = `"[tcomb] Invalid value \\"http://test.com\\" supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 4`] = `"[tcomb] Invalid value \\"/url\\" supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 5`] = `"[tcomb] Invalid value \\"url/\\" supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 6`] = `"[tcomb] Invalid value \\"url\\" supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 7`] = `"[tcomb] Invalid value -1 supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 8`] = `"[tcomb] Invalid value 1 supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 9`] = `"[tcomb] Invalid value -1.555 supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 10`] = `"[tcomb] Invalid value 1.555 supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 11`] = `"[tcomb] Invalid value 0 supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 12`] = `"[tcomb] Invalid value null supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should error on everything except path with image file 13`] = `"[tcomb] Invalid value undefined supplied to Image file"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 1`] = `"file.jpg"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 2`] = `"file.jpeg"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 3`] = `"file.png"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 4`] = `"file.gif"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 5`] = `"file.svg"`;
+
+exports[`Tcomb refinement Maxlength should error on long arrays 1`] = `
+"[tcomb] Invalid value [
+  1,
+  2,
+  3,
+  4
+] supplied to List, Maxlength 3"
+`;
+
+exports[`Tcomb refinement Maxlength should error on long strings 1`] = `"[tcomb] Invalid value \\"1234\\" supplied to String, Maxlength 3"`;
+
+exports[`Tcomb refinement Maxlength should error on not \`number\` max 1`] = `"[tcomb] Invalid value \\"nope\\" supplied to Number"`;
+
+exports[`Tcomb refinement Maxlength should error on not tcomb type 1`] = `"[tcomb] Invalid value \\"nope\\" supplied to Type"`;
+
+exports[`Tcomb refinement Maxlength should pass array with less or equal length 1`] = `
+Array [
+  1,
+  2,
+]
+`;
+
+exports[`Tcomb refinement Maxlength should pass array with less or equal length 2`] = `
+Array [
+  1,
+  2,
+  3,
+]
+`;
+
+exports[`Tcomb refinement Maxlength should pass string with less or equal length 1`] = `"12"`;
+
+exports[`Tcomb refinement Maxlength should pass string with less or equal length 2`] = `"123"`;
