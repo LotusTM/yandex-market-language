@@ -2,14 +2,14 @@
 
 const builder = require('xmlbuilder')
 const {
-  create,
+  createYML,
   createDeliveryOptions,
   createOfferPrice
 } = require('../lib/create')
 
-describe('create function', () => {
+describe('createYML function', () => {
   it('should create YML', () => {
-    expect(create({
+    expect(createYML({
       name: 'BestSeller',
       company: 'Tne Best inc.',
       url: 'http://best.seller.ru',
