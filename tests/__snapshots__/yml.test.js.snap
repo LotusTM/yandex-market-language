@@ -244,4 +244,11 @@ exports[`yml function \`end\` method should create and immidiately print YML 1`]
 </yml_catalog>"
 `;
 
+exports[`yml function should pass valid input and reuturn methods 1`] = `
+Object {
+  "create": [Function],
+  "end": [Function],
+}
+`;
+
 exports[`yml function should throw validation error on wrong input 1`] = `"[tcomb] Invalid value undefined supplied to YML/company: String"`;

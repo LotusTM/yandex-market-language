@@ -1,10 +1,15 @@
 /* eslint-env jest */
 
 const yml = require('../lib/yml')
+const { VALID_INPUT } = require('./fixtures/inputs')
 
 describe('yml function', () => {
   it('should throw validation error on wrong input', () => {
     expect(() => yml({ name: 'BestSeller' })).toThrowErrorMatchingSnapshot()
+  })
+
+  it('should pass valid input and reuturn methods', () => {
+    expect(yml(VALID_INPUT)).toMatchSnapshot()
   })
 
   it('`create` method should create YML', () => {
