@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Offer schema should detect and throw on wrong Free Offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(FreeOffer)/id: String, Maxlength 20"`;
+
+exports[`Offer schema should detect and throw on wrong Simplified Offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(SimplifiedOffer)/id: String, Maxlength 20"`;
+
+exports[`Offer schema should throw on unrecognised offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(SimplifiedOffer)/price: Number | PriceObject (no constructor returned by dispatch)"`;
