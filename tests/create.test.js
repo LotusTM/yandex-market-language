@@ -100,7 +100,7 @@ describe('createDeliveryOptions function', () => {
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
 
-  it('should build proper nodes days as with number', () => {
+  it('should build proper nodes with days as number', () => {
     const xml = createDeliveryOptions(builder.create('root'), [{ cost: 300, days: 1, 'order-before': 12 }])
     expect(xml.end({ pretty: true })).toMatchSnapshot()
   })
