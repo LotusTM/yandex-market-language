@@ -1,14 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`yml function \`create\` method should create YML 1`] = `
-"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
-<yml_catalog date=\\"2017-09-07 00:00\\">
-  <shop>
-    <name>BestSeller</name>
-    <company>Tne Best inc.</company>
-    <url>http://best.seller.ru</url>
-  </shop>
-</yml_catalog>"
+XMLElement {
+  "attributes": Object {},
+  "children": Array [
+    XMLElement {
+      "attributes": Object {},
+      "children": Array [
+        XMLText {
+          "children": Array [],
+          "options": Object {
+            "encoding": "UTF-8",
+            "version": "1.0",
+            "writer": XMLStringWriter {
+              "allowEmpty": false,
+              "dontprettytextnodes": 0,
+              "indent": "",
+              "newline": "",
+              "newlinedefault": "",
+              "offset": 0,
+              "pretty": false,
+              "prettydefault": false,
+              "spacebeforeslash": "",
+            },
+          },
+          "parent": [Circular],
+          "stringify": XMLStringifier {
+            "assertLegalChar": [Function],
+            "noDoubleEncoding": undefined,
+          },
+          "value": "BestSeller",
+        },
+      ],
+      "name": "name",
+      "options": Object {
+        "encoding": "UTF-8",
+        "version": "1.0",
+        "writer": XMLStringWriter {
+          "allowEmpty": false,
+          "dontprettytextnodes": 0,
+          "indent": "",
+          "newline": "",
+          "newlinedefault": "",
+          "offset": 0,
+          "pretty": false,
+          "prettydefault": false,
+          "spacebeforeslash": "",
+        },
+      },
+      "parent": [Circular],
+      "stringify": XMLStringifier {
+        "assertLegalChar": [Function],
+        "noDoubleEncoding": undefined,
+      },
+    },
+  ],
+  "name": "shop",
+  "options": Object {
+    "encoding": "UTF-8",
+    "version": "1.0",
+    "writer": XMLStringWriter {
+      "allowEmpty": false,
+      "dontprettytextnodes": 0,
+      "indent": "",
+      "newline": "",
+      "newlinedefault": "",
+      "offset": 0,
+      "pretty": false,
+      "prettydefault": false,
+      "spacebeforeslash": "",
+    },
+  },
+  "parent": XMLElement {
+    "attributes": Object {
+      "date": XMLAttribute {
+        "name": "date",
+        "options": Object {
+          "encoding": "UTF-8",
+          "version": "1.0",
+          "writer": XMLStringWriter {
+            "allowEmpty": false,
+            "dontprettytextnodes": 0,
+            "indent": "",
+            "newline": "",
+            "newlinedefault": "",
+            "offset": 0,
+            "pretty": false,
+            "prettydefault": false,
+            "spacebeforeslash": "",
+          },
+        },
+        "stringify": XMLStringifier {
+          "assertLegalChar": [Function],
+          "noDoubleEncoding": undefined,
+        },
+        "value": "2017-09-07 00:00",
+      },
+    },
+    "children": Array [
+      [Circular],
+    ],
+    "documentObject": XMLDocument {
+      "children": Array [
+        XMLDeclaration {
+          "children": Array [],
+          "encoding": "UTF-8",
+          "options": Object {
+            "encoding": "UTF-8",
+            "version": "1.0",
+            "writer": XMLStringWriter {
+              "allowEmpty": false,
+              "dontprettytextnodes": 0,
+              "indent": "",
+              "newline": "",
+              "newlinedefault": "",
+              "offset": 0,
+              "pretty": false,
+              "prettydefault": false,
+              "spacebeforeslash": "",
+            },
+          },
+          "parent": [Circular],
+          "stringify": XMLStringifier {
+            "assertLegalChar": [Function],
+            "noDoubleEncoding": undefined,
+          },
+          "version": "1.0",
+        },
+        [Circular],
+      ],
+      "isDocument": true,
+      "options": Object {
+        "encoding": "UTF-8",
+        "version": "1.0",
+        "writer": XMLStringWriter {
+          "allowEmpty": false,
+          "dontprettytextnodes": 0,
+          "indent": "",
+          "newline": "",
+          "newlinedefault": "",
+          "offset": 0,
+          "pretty": false,
+          "prettydefault": false,
+          "spacebeforeslash": "",
+        },
+      },
+      "parent": null,
+      "rootObject": [Circular],
+      "stringify": XMLStringifier {
+        "assertLegalChar": [Function],
+        "noDoubleEncoding": undefined,
+      },
+    },
+    "isRoot": true,
+    "name": "yml_catalog",
+    "options": Object {
+      "encoding": "UTF-8",
+      "version": "1.0",
+      "writer": XMLStringWriter {
+        "allowEmpty": false,
+        "dontprettytextnodes": 0,
+        "indent": "",
+        "newline": "",
+        "newlinedefault": "",
+        "offset": 0,
+        "pretty": false,
+        "prettydefault": false,
+        "spacebeforeslash": "",
+      },
+    },
+    "parent": XMLDocument {
+      "children": Array [
+        XMLDeclaration {
+          "children": Array [],
+          "encoding": "UTF-8",
+          "options": Object {
+            "encoding": "UTF-8",
+            "version": "1.0",
+            "writer": XMLStringWriter {
+              "allowEmpty": false,
+              "dontprettytextnodes": 0,
+              "indent": "",
+              "newline": "",
+              "newlinedefault": "",
+              "offset": 0,
+              "pretty": false,
+              "prettydefault": false,
+              "spacebeforeslash": "",
+            },
+          },
+          "parent": [Circular],
+          "stringify": XMLStringifier {
+            "assertLegalChar": [Function],
+            "noDoubleEncoding": undefined,
+          },
+          "version": "1.0",
+        },
+        [Circular],
+      ],
+      "isDocument": true,
+      "options": Object {
+        "encoding": "UTF-8",
+        "version": "1.0",
+        "writer": XMLStringWriter {
+          "allowEmpty": false,
+          "dontprettytextnodes": 0,
+          "indent": "",
+          "newline": "",
+          "newlinedefault": "",
+          "offset": 0,
+          "pretty": false,
+          "prettydefault": false,
+          "spacebeforeslash": "",
+        },
+      },
+      "parent": null,
+      "rootObject": [Circular],
+      "stringify": XMLStringifier {
+        "assertLegalChar": [Function],
+        "noDoubleEncoding": undefined,
+      },
+    },
+    "stringify": XMLStringifier {
+      "assertLegalChar": [Function],
+      "noDoubleEncoding": undefined,
+    },
+  },
+  "stringify": XMLStringifier {
+    "assertLegalChar": [Function],
+    "noDoubleEncoding": undefined,
+  },
+}
 `;
 
 exports[`yml function \`end\` method should create and immidiately print YML 1`] = `
