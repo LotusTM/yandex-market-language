@@ -8,7 +8,7 @@ describe('yml function', () => {
     expect(() => yml({ name: 'BestSeller' })).toThrowErrorMatchingSnapshot()
   })
 
-  it('should pass valid input and reuturn methods', () => {
+  it('should pass valid input and return methods', () => {
     expect(yml(VALID_INPUT)).toMatchSnapshot()
   })
 
