@@ -10,4 +10,12 @@ describe('yml function', () => {
       url: 'http://best.seller.ru'
     }, { validate: false, date: '2017-09-07' }).create().end({ pretty: true })).toMatchSnapshot()
   })
+
+  it('`end` method should create and immidiately print YML', () => {
+    expect(yml({
+      name: 'BestSeller',
+      company: 'Tne Best inc.',
+      url: 'http://best.seller.ru'
+    }, { validate: false, date: '2017-09-07' }).end({ pretty: true })).toMatchSnapshot()
+  })
 })
