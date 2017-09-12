@@ -84,8 +84,8 @@ exports[`createYML function should create YML 1`] = `
         <vendorCode>A1234567B</vendorCode>
         <description>
           <![CDATA[
-            <p>Отличный подарок для любителей венских вафель.</p>
-          ]]>
+        <p>Отличный подарок для любителей венских вафель.</p>
+      ]]>
         </description>
         <sales_notes>Необходима предоплата.</sales_notes>
         <manufacturer_warranty>true</manufacturer_warranty>
