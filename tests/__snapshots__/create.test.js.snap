@@ -1,5 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`createDeliveryOptions function should build proper nodes days as with number 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"1\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
+exports[`createDeliveryOptions function should build proper nodes with days as empty string 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
+exports[`createDeliveryOptions function should build proper nodes with days as tuple 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <delivery-options>
+    <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
+  </delivery-options>
+</root>"
+`;
+
+exports[`createOfferPrice function should build proper nodes from number 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <price>1490</price>
+</root>"
+`;
+
+exports[`createOfferPrice function should build proper nodes from object 1`] = `
+"<?xml version=\\"1.0\\"?>
+<root>
+  <price from=\\"true\\">1490</price>
+</root>"
+`;
+
 exports[`createYML function should create YML 1`] = `
 "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
 <yml_catalog date=\\"2017-09-07 00:00\\">
@@ -62,43 +103,18 @@ exports[`createYML function should create YML 1`] = `
 </yml_catalog>"
 `;
 
-exports[`createDeliveryOptions function should build proper nodes days as with number 1`] = `
-"<?xml version=\\"1.0\\"?>
-<root>
-  <delivery-options>
-    <option cost=\\"300\\" days=\\"1\\" order-before=\\"12\\"/>
-  </delivery-options>
-</root>"
-`;
-
-exports[`createDeliveryOptions function should build proper nodes with days as empty string 1`] = `
-"<?xml version=\\"1.0\\"?>
-<root>
-  <delivery-options>
-    <option cost=\\"300\\" days=\\"\\" order-before=\\"12\\"/>
-  </delivery-options>
-</root>"
-`;
-
-exports[`createDeliveryOptions function should build proper nodes with days as tuple 1`] = `
-"<?xml version=\\"1.0\\"?>
-<root>
-  <delivery-options>
-    <option cost=\\"300\\" days=\\"1-20\\" order-before=\\"12\\"/>
-  </delivery-options>
-</root>"
-`;
-
-exports[`createOfferPrice function should build proper nodes from number 1`] = `
-"<?xml version=\\"1.0\\"?>
-<root>
-  <price>1490</price>
-</root>"
-`;
-
-exports[`createOfferPrice function should build proper nodes from object 1`] = `
-"<?xml version=\\"1.0\\"?>
-<root>
-  <price from=\\"true\\">1490</price>
-</root>"
+exports[`createYML function should escape " & > < ' 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<yml_catalog date=\\"2017-09-07 00:00\\">
+  <shop>
+    <name>\\" &amp; &gt; &lt; '</name>
+    <offers>
+      <offer>
+        <description>
+          <![CDATA[<p>\\" & > < '</p>]]>
+        </description>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>"
 `;

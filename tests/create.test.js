@@ -82,6 +82,16 @@ describe('createYML function', () => {
       ]
     }, { date: '2017-09-07' }).end({ pretty: true })).toMatchSnapshot()
   })
+
+  // YML specs require those to be always escaped
+  it(`should escape " & > < '`, () => {
+    expect(createYML({
+      name: `" & > < '`,
+      offers: [
+        { description: `<p>" & > < '</p>` }
+      ]
+    }, { date: '2017-09-07' }).end({ pretty: true })).toMatchSnapshot()
+  })
 })
 
 describe('createDeliveryOptions function', () => {
