@@ -25,6 +25,7 @@
     "generator",
     "validator"
   ],
+  "main": "./lib/yml",
   "dependencies": {
     "moment": "2.18.1",
     "tcomb": "3.2.23",
