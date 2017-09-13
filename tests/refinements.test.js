@@ -1,7 +1,7 @@
 /* eslint-env jest */
 
 const t = require('tcomb')
-const r = require('./refinements')
+const r = require('../lib/refinements')
 
 describe('Tcomb refinement', () => {
   describe('Absoluteurl', () => {
