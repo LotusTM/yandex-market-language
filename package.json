@@ -1,6 +1,6 @@
 {
   "name": "yandex-market-language",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Your own Yandex Market Language (YML) generator, with blackjack and validation",
   "homepage": "https://github.com/LotusTM/yandex-market-language",
   "author": "Serj Lavrin (https://github.com/ArmorDarks)",
