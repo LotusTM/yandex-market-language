@@ -42,7 +42,8 @@
   "scripts": {
     "lint": "standard | snazzy",
     "test:watch": "jest --watch",
-    "test": "npm run lint && jest"
+    "test": "npm run lint && jest",
+    "prepublish": "npm test"
   },
   "jest": {
     "testEnvironment": "node",
