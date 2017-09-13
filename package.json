@@ -43,7 +43,7 @@
     "lint": "standard | snazzy",
     "test:watch": "jest --watch",
     "test": "npm run lint && jest",
-    "prepublish": "npm test"
+    "prepublishOnly": "npm test"
   },
   "jest": {
     "testEnvironment": "node",
