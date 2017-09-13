@@ -4,4 +4,4 @@ exports[`Offer schema should detect and throw on wrong Free Offer 1`] = `"[tcomb
 
 exports[`Offer schema should detect and throw on wrong Simplified Offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(SimplifiedOffer)/id: String, Maxlength 20"`;
 
-exports[`Offer schema should throw on unrecognised offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(SimplifiedOffer)/price: Number | PriceObject(PriceObject) (expected an object)"`;
+exports[`Offer schema should throw on unrecognised offer 1`] = `"[tcomb] Invalid value undefined supplied to Offer(SimplifiedOffer)/price: Number | PriceObject(PriceObject)"`;
