@@ -1,4 +1,6 @@
 # Changelog
 
-## HEAD
+## 0.4.0
+
+- Updated VAT value
 
