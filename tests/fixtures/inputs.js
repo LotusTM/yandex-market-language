@@ -161,7 +161,7 @@ const MAX_VALID_INPUT = {
       dimensions: [10, 20, 30],
       downloadable: true,
       rec: ['123', '456'],
-      vat: 1
+      vat: 2
     },
 
     // Free Offer
@@ -214,7 +214,7 @@ const MAX_VALID_INPUT = {
       dimensions: [10, 20, 30],
       downloadable: true,
       rec: ['123', '456'],
-      vat: 1
+      vat: 2
     }
   ]
 }

@@ -321,7 +321,7 @@ exports[`yml function should work correctly with max input 1`] = `
         <dimensions>10/20/30</dimensions>
         <downloadable>true</downloadable>
         <rec>123,456</rec>
-        <vat>1</vat>
+        <vat>2</vat>
       </offer>
       <offer type=\\"vendor.model\\" id=\\"1\\" available=\\"true\\" bid=\\"20\\" cbid=\\"50\\" fee=\\"10\\" group_id=\\"13\\">
         <typePrefix>Вафельница</typePrefix>
@@ -364,7 +364,7 @@ exports[`yml function should work correctly with max input 1`] = `
         <dimensions>10/20/30</dimensions>
         <downloadable>true</downloadable>
         <rec>123,456</rec>
-        <vat>1</vat>
+        <vat>2</vat>
       </offer>
     </offers>
   </shop>
