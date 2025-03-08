@@ -29,6 +29,7 @@ describe('Tcomb refinement', () => {
     it('should pass path with image file', () => {
       expect(r.Imagepath('file.jpg')).toMatchSnapshot()
       expect(r.Imagepath('file.jpeg')).toMatchSnapshot()
+      expect(r.Imagepath('file.webp')).toMatchSnapshot()
       expect(r.Imagepath('file.png')).toMatchSnapshot()
       expect(r.Imagepath('file.gif')).toMatchSnapshot()
       expect(r.Imagepath('file.svg')).toMatchSnapshot()
