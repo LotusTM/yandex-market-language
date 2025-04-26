@@ -39,7 +39,7 @@ describe('forNodeEach function', () => {
 
 describe('cleanse function', () => {
   it('should cleanse object', () => {
-    expect(cleanse({ one: 'test', undefined: undefined })).toMatchSnapshot()
+    expect(cleanse({ one: 'test', undefined })).toMatchSnapshot()
     expect(cleanse({ one: 'test', null: null })).toMatchSnapshot()
     expect(cleanse({ one: 'test', name: 'Ted', age: 100 }, 'name', 'age')).toMatchSnapshot()
   })

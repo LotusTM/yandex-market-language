@@ -16,11 +16,11 @@ describe('createYML function', () => {
   // YML specs require those to be always escaped
   // @todo Check ouput in Yandex validator, specs says they should always be &quot; &amp; &gt; &lt; &apos;
   //       while " and ' preserved during escaping
-  it(`should escape " & > < '`, () => {
+  it('should escape " & > < \'', () => {
     expect(createYML({
-      name: `" & > < '`,
+      name: '" & > < \'',
       offers: [
-        { description: `<p>" & > < '</p>` }
+        { description: '<p>" & > < \'</p>' }
       ]
     }, { date: '2017-09-07' }).end({ pretty: true })).toMatchSnapshot()
   })
