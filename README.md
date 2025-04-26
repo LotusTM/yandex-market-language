@@ -1,25 +1,15 @@
 Yandex Market Language (YML)
 ============================
 
-> Your own Yandex Market Language (YML) generator from JSON, with blackjack and validation
+> 🇺🇸 Your own Yandex Market Language (YML) generator from JSON, with blackjack and validation
+> 
+> 🇷🇺 Твой собственный генератор Yandex Market Language (YML) из JSON, с блэкджэком и валидацией
 
-> Твой собственный генератор Yandex Market Language (YML) из JSON, с блэкджэком и валидацией
-
-<a href='https://www.npmjs.com/package/yandex-market-language'>
-  <img src='https://img.shields.io/npm/v/yandex-market-language.svg' alt='NPM version' />
-</a>
-<a href='https://travis-ci.org/LotusTM/yandex-market-language'>
-  <img src='https://img.shields.io/travis/LotusTM/yandex-market-language.svg?label=travis' alt='Travis Build Status' />
-</a>
-<a href='https://greenkeeper.io'>
-  <img src='https://badges.greenkeeper.io/LotusTM/yandex-market-language.svg' alt='Greenkeeper Status' />
-</a>
-<a href='https://david-dm.org/LotusTM/yandex-market-language'>
-  <img src='https://img.shields.io/david/LotusTM/yandex-market-language.svg' alt='Dependency Status' />
-</a>
-<a href='https://david-dm.org/LotusTM/yandex-market-language?type=dev'>
-  <img src='https://img.shields.io/david/dev/LotusTM/yandex-market-language.svg' alt='DevDependency Status' />
-</a>
+[![NPM version](https://img.shields.io/npm/v/yandex-market-language)](https://www.npmjs.com/package/yandex-market-language)
+[![License](https://img.shields.io/npm/l/yandex-market-language)](https://opensource.org/license/apache-2-0)
+[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/LotusTM/yandex-market-language/test.yml)](https://github.com/LotusTM/yandex-market-language/actions/workflows/test.yml)
+[![Code coverage](https://img.shields.io/codecov/c/github/LotusTM/yandex-market-language)](https://codecov.io/gh/LotusTM/yandex-market-language)
+[![Written in Javascript](https://img.shields.io/github/languages/top/LotusTM/yandex-market-language)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## How to use
 

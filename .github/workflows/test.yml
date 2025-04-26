@@ -1,0 +1,53 @@
+name: Test
+
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - '*.md'
+  # schedule:
+  #   - cron: 0 20 * * *
+
+jobs:
+  test:
+    name: test on ${{ matrix.os-release }} node@${{ matrix.node-version }}
+    runs-on: ${{ matrix.os-release }}
+
+    strategy:
+      matrix:
+        node-version:
+          - 20
+          - 22
+        os-release:
+          - ubuntu-latest
+          - windows-latest
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: npm ci
+      - run: npm run test
+
+  coverage:
+    name: collect coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version-file: package.json
+
+      - run: npm ci
+
+      - run: npm run test
+      - uses: codecov/codecov-action@b9fd7d16f6d7d1b5d2bec1a2887e65ceed900238 # v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unit
