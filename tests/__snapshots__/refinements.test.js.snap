@@ -58,11 +58,13 @@ exports[`Tcomb refinement Imagepath should pass path with image file 1`] = `"fil
 
 exports[`Tcomb refinement Imagepath should pass path with image file 2`] = `"file.jpeg"`;
 
-exports[`Tcomb refinement Imagepath should pass path with image file 3`] = `"file.png"`;
+exports[`Tcomb refinement Imagepath should pass path with image file 3`] = `"file.webp"`;
 
-exports[`Tcomb refinement Imagepath should pass path with image file 4`] = `"file.gif"`;
+exports[`Tcomb refinement Imagepath should pass path with image file 4`] = `"file.png"`;
 
-exports[`Tcomb refinement Imagepath should pass path with image file 5`] = `"file.svg"`;
+exports[`Tcomb refinement Imagepath should pass path with image file 5`] = `"file.gif"`;
+
+exports[`Tcomb refinement Imagepath should pass path with image file 6`] = `"file.svg"`;
 
 exports[`Tcomb refinement Maxlength should error on long arrays 1`] = `
 "[tcomb] Invalid value [
